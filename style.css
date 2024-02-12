@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'lato' , sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+footer{
+    background-color: #2c3e50;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* nav bar */
+
+nav{
+    width: 100%;
+    font-family: Montserrat;
+    background-color: #2c3e50;
+    color: #fff;
+    padding-bottom: 2.2rem;
+    padding-top: 2.2rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#logo-box{
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: .4rem;
+}
+
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    display: block;
+    letter-spacing: .1rem;
+    transition: color .3s;
+}
+
+#nav-links .nav-link:hover {
+    color: #1bc9a6;
+}
+
+/* Header */
+
+header{
+    background-color: #1bc9a6;
+    padding-top: calc(112px + 10rem);
+    text-align: center;
+    padding-bottom: 112px;
+}
+
+#profile-image{
+    width: 25%;
+    height: 25%;
+}
+
+header h1{
+    color: #fff;
+    font-size: 5rem;
+    margin-top: 2%;
+    transition: color .3s;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+header h1:hover{
+    color: #2c3e50;
+}
+
+.star-light {
+    border: none;
+    border-top: .4rem solid #ffffff;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    background-color: #1bc9a6;
+    padding:0 8px ;
+}
+
+/* Portfolio */
+
+#portfolio {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+
+.star-dark {
+    border: none;
+    border-top: .4rem solid #2c3e50;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-dark::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #2c3e50;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    background-color: #fff;
+    padding:0 8px ;
+}
+
+.col {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1bc9a6;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.img-overlay .icon {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.7;
+}
+
+/*About */
+
+#about{
+    background-color: #1bc9a6;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 4.8rem;
+    color: #fff;
+}
+
+#secondary-star::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    background-color: #1bc9a6;
+    padding:0 8px ;
+}
+
+#about-text{
+    text-align: left;
+}
+
+#about-text .left {
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+    padding-left: 20%;
+}
+
+#about-text .right {
+   float: right;
+   width: 50%;
+   padding-left: 2%;
+   padding-right: 20%;
+}
+
+#about-text .text {
+    font-size: 150%;
+}
+
+#btn-download button {
+    width: 23.1rem;
+    height: 6.5rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border-color: #fff;
+    background-color: #1bc9a6;
+    border-width: 3px;
+    color: #fff;
+    font-size: 2rem;
+    border-style: solid;
+    transition: background-color .3s;
+    transition: color .3s;
+}
+
+#btn-download button:hover{
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+/* Contact */
+
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+
+#contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    border-bottom: 1px solid #2c3e50;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+}
+
+.form-group input,.form-group textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+
+.form-group input:focus {
+    outline: 0;
+}
+
+#contact-form button{
+    width: 23.1rem;
+    height: 6.5rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border-color: #fff;
+    background-color: #1bc9a6;
+    border-width: 3px;
+    color: #fff;
+    font-size: 2rem;
+    border-style: solid;
+    transition: background-color .3s;  
+}
+
+#contact-form button:hover {
+    background-color: #2c3e50;
+}
+
+/* Footer */
+
+footer{
+    background-color: #2c3e50;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    border: #fff 2px solid;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: backgroundcolor .3s;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+footer button a {
+    color: #fff;
+    transition: color .3s;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+footer button:hover, footer button a:hover{
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+.copyright {
+    background-color: #1b2530;
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 0.2rem;
+}
