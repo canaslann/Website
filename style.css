@@ -120,8 +120,9 @@ header{
 }
 
 #profile-image{
-    width: 25%;
-    height: 25%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
 }
 
 header h1{
